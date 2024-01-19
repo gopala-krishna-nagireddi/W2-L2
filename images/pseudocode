@@ -1,0 +1,48 @@
+1. HTML Structure:
+   - Create the main HTML structure with navigation, product details, and carousel containers.
+
+2. CSS Styling:
+   - Apply global styles using the * selector.
+   - Define styles for the body, main container, and other elements using classes.
+   - Implement responsive styles for different screen sizes using media queries.
+
+3. JavaScript Logic:
+   - Use `document.addEventListener("DOMContentLoaded", function () {...});` to ensure the DOM is fully loaded before executing JavaScript.
+
+   - Inside the event listener:
+      a. Select necessary elements using `document.querySelector`.
+
+      b. Create a function `createAndAppendProduct` to dynamically create and append product details to the product details container.
+         - If it's the initialization phase, set the background of the main container based on the product's background color.
+         - Create elements for heading, caption, chooseus, description, and price.
+
+      c. Create a function `updateProductDetails` to update product details based on the active slide.
+         - Clear existing product details.
+         - Get the active product based on the active slide index.
+         - Call `createAndAppendProduct` with the active product.
+
+      d. Create a function `displayProducts` to display products in the carousel.
+         - Iterate through each product.
+         - Call `createAndAppendProduct` for each product, passing 1 for initialization during the first call.
+         - Initialize the Splide carousel with appropriate options.
+         - Listen for the "moved" event to call `updateProductDetails` when the slide changes.
+         - Mount the Splide carousel.
+
+      e. Create a function `fetchProductList` to fetch the product list from "/watches.json".
+         - Use the fetch API to get the JSON data.
+         - Store the products globally.
+         - Call `displayProducts` to display products in the carousel.
+
+   - Call `fetchProductList` to initiate the product fetching and rendering process.
+
+4. JSON Data:
+   - Create a JSON file ("/watches.json") containing an array of watches with properties like id, heading, spanText, description, price, productImg, and backgroundColor.
+
+5. Additional Styling:
+   - Adjust the styling based on your design preferences and requirements.
+
+6. Test the Application:
+   - Load the HTML file in a browser and ensure that the product details and carousel are displayed correctly.
+   - Verify that the product details update dynamically based on the active slide.
+
+7. Make adjustments as needed based on testing results and design requirements.

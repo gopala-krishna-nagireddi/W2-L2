@@ -1,0 +1,145 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 20px;
+}
+
+.home-page-products-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #fff;
+  font-family: "Sofia Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.caption {
+  color: #fff;
+  font-family: "Sofia Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 115.5%; /* 60.06px */
+  letter-spacing: -0.52px;
+  margin: 0;
+}
+
+.chooseus {
+  color: #1c1415;
+  font-family: "Sofia Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 115.5%;
+  letter-spacing: -0.52px;
+}
+
+.price {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137%; /* 95.9px */
+  letter-spacing: -0.7px;
+}
+
+.description {
+  color: rgba(28, 20, 21, 0.8);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 190%; /* 45.6px */
+}
+
+.nav-menu-container {
+  display: none;
+}
+
+.logo {
+  margin: 20px;
+}
+
+.product-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 40px 80px;
+  }
+  .home-page-products-banner-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .home-page-products-details-container {
+    width: 60%;
+  }
+
+  .products-corousel-container {
+    width: 30%;
+  }
+
+  .home-page-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item {
+    color: #1c1415;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 40px;
+  }
+
+  .signup-btn {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    background: #1c1415;
+    padding: 5px 12px;
+  }
+
+  .price {
+    font-size: 48px;
+  }
+}
